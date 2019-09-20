@@ -4,7 +4,7 @@
 - Commonplace MS structure/organization
 - Interactor service layer
 - Classical style tests
-- Serverside Rendered React
+- Serverside Rendered React, Multi-page Application
 
 #### DB
 
