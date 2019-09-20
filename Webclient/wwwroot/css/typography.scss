@@ -1,0 +1,23 @@
+﻿@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+%font-standard { font-family: "system"; }
+%font-bold { font-family: 'Ranchers'; letter-spacing: .15em; }
+%font-fancy { font-family: 'Unica One'; }
+
+HTML, BODY
+{
+  @extend %font-standard;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.58;
+  letter-spacing: 0;
+}
+
+.text-large { font-size: 1.25rem; line-height: 1.2rem; }
+.text-larger { font-size: 1.5rem; line-height: 1.2rem; }
+.text-largest { font-size: 2rem; line-height: 1.2rem; }

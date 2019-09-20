@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "New Account";
+}
+
+@Html.React("AccountRegisterPage", new 
+{
+  urls = Url.ApplicationUrls(),
+})
+
+@section ReactPageScript
+{
+    <script src="@Url.Content("~/js/bundle_output/account.bundle.jsx")" asp-append-version="true"></script>
+}

@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@Html.React("HomeIndexPage", new 
+{
+  urls = Url.ApplicationUrls(),
+})
+
+@section ReactPageScript
+{
+    <script src="@Url.Content("~/js/bundle_output/home.bundle.jsx")" asp-append-version="true"></script>
+}

@@ -1,0 +1,63 @@
+﻿[
+  {
+    "outputFileName": "wwwroot/css/bundle_output/site.min.css",
+    "inputFiles": [
+      "wwwroot/css/main.min.css"
+    ]
+  },
+
+  {
+    "outputFileName": "wwwroot/js/bundle_output/site.min.js",
+    "inputFiles": [
+      "wwwroot/js/polyfills/**/*.js",
+      "wwwroot/js/namespacing.js",
+      "wwwroot/js/utility/**/*.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": false
+    },
+    "sourceMap": false
+  },
+
+
+
+  {
+    "outputFileName": "wwwroot/js/bundle_output/serverside-rendering.bundle.jsx",
+    "inputFiles": [
+      "views/**/*.jsx"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": false
+    },
+    "sourceMap": false
+  },
+
+  {
+    "outputFileName": "wwwroot/js/bundle_output/home.bundle.jsx",
+    "inputFiles": [
+      "views/shared/**/*.jsx",
+      "views/home/**/*.jsx"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": false
+    },
+    "sourceMap": false
+  },
+
+  {
+    "outputFileName": "wwwroot/js/bundle_output/account.bundle.jsx",
+    "inputFiles": [
+      "views/shared/**/*.jsx",
+      "views/account/**/*.jsx"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": false
+    },
+    "sourceMap": false
+  },
+
+]

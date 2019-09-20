@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+@Html.React("PrivacyPage", new {})
+
+@section ReactPageScript
+{
+    <script src="@Url.Content("~/js/bundle_output/home.bundle.jsx")" asp-append-version="true"></script>
+}

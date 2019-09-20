@@ -1,0 +1,22 @@
+﻿@using BOS.Webclient.Infrastructure.Services
+@using BOS.Webclient.Models.Accounts
+@model BOS.Webclient.Infrastructure.Services.InteractorResult<BOS.Webclient.Models.Accounts.ApplicationUser>
+@{
+    ViewData["Title"] = "Your Account";
+}
+
+@Html.React("AccountIndexPage", new 
+{
+  urls = Url.ApplicationUrls(),
+  user = new 
+  {
+    email = Model.Data.Email,
+    name = Model.Data.Name,
+    joined_on = Model.Data.CreatedOn.ToString("MM/dd/yyyy")
+  }
+})
+
+@section ReactPageScript
+{
+    <script src="@Url.Content("~/js/bundle_output/account.bundle.jsx")" asp-append-version="true"></script>
+}

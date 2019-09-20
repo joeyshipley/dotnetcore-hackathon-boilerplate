@@ -1,0 +1,4 @@
+﻿var BOS = {
+  UTIL: {},
+  PAGES: {}
+};

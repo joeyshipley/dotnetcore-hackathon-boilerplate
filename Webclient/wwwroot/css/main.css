@@ -1,0 +1,123 @@
+﻿@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma"); }
+
+HTML, BODY {
+  font-family: "system"; }
+
+HTML, BODY {
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.58;
+  letter-spacing: 0; }
+
+.text-large {
+  font-size: 1.25rem;
+  line-height: 1.2rem; }
+
+.text-larger {
+  font-size: 1.5rem;
+  line-height: 1.2rem; }
+
+.text-largest {
+  font-size: 2rem;
+  line-height: 1.2rem; }
+
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all; }
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px; }
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px; } }
+
+.border-top {
+  border-top: 1px solid #e5e5e5; }
+
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5; }
+
+.box-shadow {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05); }
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit; }
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px; }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  /* Set fixed height of footer here */
+  height: 60px;
+  line-height: 60px;
+  /* Vertically center text there */ }
+
+.hero-shop > .content-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.hero-entry {
+  display: flex;
+  flex-direction: column;
+  margin: 0 12px 12px 0; }
+  .hero-entry.male .portrait:after {
+    content: ' \2642';
+    color: #72b6ff; }
+  .hero-entry.female .portrait:after {
+    content: ' \2640';
+    color: #ffcbd4; }
+  .hero-entry.common > .content-container {
+    background-color: #DEDEDE; }
+  .hero-entry.uncommon > .content-container {
+    background-color: #99d399; }
+  .hero-entry.rare > .content-container {
+    background-color: #8abffd; }
+  .hero-entry.legendary > .content-container {
+    background-color: #9f679f; }
+  .hero-entry.fabled > .content-container {
+    background-color: #e2b156; }
+  .hero-entry > .content-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-shadow: 2px 2px #333333; }
+    .hero-entry > .content-container .portrait {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 125px;
+      height: 125px;
+      font-weight: bold;
+      font-size: 60px;
+      text-align: center;
+      background-color: #666666; }
+    .hero-entry > .content-container .name {
+      padding: 3px 2px;
+      font-size: 0.7rem;
+      text-align: center; }
+  .hero-entry .actions {
+    margin-top: 6px;
+    text-align: center; }

@@ -1,0 +1,82 @@
+﻿.hero-shop
+{
+  > .content-container
+  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.hero-entry
+{
+  display: flex;
+  flex-direction: column;
+  margin: 0 12px 12px 0;
+
+  &.male
+  {
+    .portrait:after { content: ' \2642'; color: #72b6ff; }
+  }
+
+  &.female
+  {
+    .portrait:after { content: ' \2640'; color: #ffcbd4; }
+  }
+
+  &.common 
+  {
+    > .content-container { background-color: #DEDEDE; }
+  }
+  &.uncommon 
+  {
+      > .content-container { background-color: #99d399; }
+  }
+  &.rare 
+  {
+    > .content-container { background-color: #8abffd; }
+  }
+  &.legendary 
+  {
+    > .content-container { background-color: #9f679f; }
+  }
+  &.fabled 
+  {
+    > .content-container { background-color: #e2b156; }
+  }
+
+  > .content-container
+  {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-shadow: 2px 2px #333333;
+
+    .portrait
+    {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 125px;
+      height: 125px;
+      font-weight: bold; 
+      font-size: 60px;
+      text-align: center;
+      background-color: #666666;
+    }
+
+    .name
+    {
+      padding: 3px 2px;
+      font-size: 0.7rem;
+      text-align: center;
+    }
+  }
+
+  .actions
+  {
+    margin-top: 6px;
+    text-align: center;
+  }
+}
+
