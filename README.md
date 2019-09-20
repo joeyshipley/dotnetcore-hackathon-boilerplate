@@ -19,6 +19,7 @@
 - Localization
 - CI/CD/Containers?
 - Can anything else be pulled from the architecture without losing the intent/spirit?
+- Tooling: Code generate interactors w/test (and possibly others)?
 
 #### Share
 
